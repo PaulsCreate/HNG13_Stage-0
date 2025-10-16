@@ -57,9 +57,11 @@ npm start
 
 The server will run:
 `http://localhost:3000/me`
-4️⃣👇![Uploading TablestoryOracle'SRestGIF.gif…]()
- To Run live!! 
+
+```
+4️⃣👇To Run live!! 
 (https://profiienfo.up.railway.app)
+```
 
 ## 🧰 Dependencies
 
