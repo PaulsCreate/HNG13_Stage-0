@@ -59,8 +59,8 @@ The server will run:
 `http://localhost:3000/me`
 
 ```
-4️⃣👇To Run live!! 
-(https://profiienfo.up.railway.app)
+4️⃣🌐 Live API Endpoint:
+👉 https://profiienfo.up.railway.app/me
 ```
 
 ## 🧰 Dependencies
