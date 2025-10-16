@@ -11,9 +11,9 @@ const limiter = rateLimit({
   legacyHeaders: false, // Disable the `X-RateLimit-*` headers
 });
 
-app.use(limiter)
+app.use(limiter);
 app.use(express.json());
 
-app.use("/api/", limiter, profileRoute);
+app.use("/", limiter, profileRoute);
 
 module.exports = app;
