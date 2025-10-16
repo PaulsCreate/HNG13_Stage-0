@@ -37,6 +37,7 @@
     "escape-html": "^1.0.3",
     "etag": "^1.8.1",
     "express": "^5.1.0",
+    "express-rate-limit": "^8.1.0",
     "fill-range": "^7.1.1",
     "finalhandler": "^2.1.0",
     "follow-redirects": "^1.15.11",
@@ -110,11 +111,10 @@
     "vary": "^1.1.2",
     "wrappy": "^1.0.2"
   },
-  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start:dev": "nodemon server.js",
-    "start:prod":"nodemon server.js"
+    "start:prod": "nodemon server.js"
   },
   "author": "Paul Yusuf",
   "license": "MIT",

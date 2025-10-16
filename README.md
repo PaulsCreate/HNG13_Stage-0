@@ -1,21 +1,22 @@
 # 🧠 Backend Wizards Stage 0 — Dynamic Profile Endpoint
 
-A simple RESTful API built with **Node.js + Express** that returns my profile information and a random cat fact fetched from the **Cat Facts API**.
+A simple RESTful API built with **Node.js + Express** that returns my profile information and a random cat fact fetched dynamically from the **Cat Facts API**.
 
 ---
 
 ## 🚀 Features
-- `/me` GET endpoint returning JSON data  
-- Dynamic timestamp in ISO 8601 format  
-- Random cat fact fetched from external API  
-- Graceful error handling  
-- Rate-limiting (100 requests / 15 min per IP)  
-- Lightweight, beginner-friendly code structure
+- ✅ `/me` GET endpoint returning JSON data  
+- 🕒 Dynamic timestamp in ISO 8601 format  
+- 🐱 Random cat fact fetched from an external API  
+- ⚡ Graceful error handling  
+- 🔒 Rate-limiting (100 requests / 15 min per IP)  
+- 🧱 Clean and scalable controller-route-app structure  
 
 ---
 
 ## 📂 API Endpoint
-### GET `/me`
+
+### **GET** `/me`
 
 **Response:**
 ```json
@@ -29,65 +30,80 @@ A simple RESTful API built with **Node.js + Express** that returns my profile in
   "timestamp": "2025-10-16T12:34:56.789Z",
   "fact": "Cats sleep 70% of their lives."
 }
+```
 
-⚙️ Installation & Usage
-
-Clone repo
-
+## ⚙️ Installation & Usage
+1️⃣ Clone the repository
+```bash
 git clone https://github.com/PaulsCreate/HNG13_Stage-0.git
 cd HNG13_Stage-0
-
-
-Install dependencies
-
+```
+2️⃣ Install dependencies
+```bash
 npm install
-
-Run server locally:
-
+```
+3️⃣ Run the server locally
+```bash
 npm start
-Server runs on http://localhost:3000/me
+```
+The server will run: 
+`http://localhost:3000/me`
 
-🧰 Dependencies
+## 🧰 Dependencies 
 
-express
-axios
-express-rate-limit
+| Package                | Description                                               |
+| ---------------------- | --------------------------------------------------------- |
+| **express**            | Fast, minimalist web framework for Node.js                |
+| **axios**              | Promise-based HTTP client for API calls                   |
+| **express-rate-limit** | Middleware to prevent abuse by limiting repeated requests |
 
 🌍 Environment Variables
 Variable	Description	Example
-PORT	Port to run server	3000
+PORT	Port number to run the server	3000
 🧪 Testing
 
-Use Postman or curl:
+Test using Postman or curl:
 
 curl http://localhost:3000/me
 
 
-Should return a valid JSON with a live cat fact.
+Should return:
+
+{
+  "status": "success",
+  "user": { "email": "paulyusuf2000@gmail.com", "name": "Paul Yusuf", "stack": "Node.js/Express" },
+  "timestamp": "2025-10-16T12:34:56.789Z",
+  "fact": "Cats sleep 70% of their lives."
+}
 
 🛠️ Deployment
 
-Deployable on:
-Railway
-Render
-Heroku
-AWS Elastic Beanstalk
+Easily deployable on:
 
-PXXL App
+⚙️ Railway
 
-🧩 Lessons Learned
+🚀 Render
 
-API integration & external requests
+☁️ Heroku
 
-Proper JSON formatting
+🧩 AWS Elastic Beanstalk
 
-Using async/await & error handling
+💡 Lessons Learned
 
-Implementing rate limiting for endpoint security
+Integrating third-party APIs using Axios
 
-Writing clear project documentation
+Returning structured and dynamic JSON responses
+
+Implementing rate-limiting for API protection
+
+Using async/await with proper error handling
+
+Structuring Node.js projects into controllers and routes
+
+Writing clean and professional documentation
 
 🧑‍💻 Author
+
 Paul Yusuf
 Backend Developer | Cybersecurity Enthusiast
-📧 paulyusuf2000@gmail.c
+📧 paulyusuf2000@gmail.com
