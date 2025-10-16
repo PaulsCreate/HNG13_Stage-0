@@ -2,7 +2,7 @@ const axios = require("axios");
 
 exports.getProfile = async (req, res) => {
   try {
-    const response = await axios.get("https://catfact.ninja/fact", {
+    const response = await axios.get(process.env.CAT_API, {
       timeout: 5000,
     });
     const catFact = response.data.fact;
