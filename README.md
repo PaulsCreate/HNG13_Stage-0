@@ -5,12 +5,13 @@ A simple RESTful API built with **Node.js + Express** that returns my profile in
 ---
 
 ## 🚀 Features
-- ✅ `/me` GET endpoint returning JSON data  
-- 🕒 Dynamic timestamp in ISO 8601 format  
-- 🐱 Random cat fact fetched from an external API  
-- ⚡ Graceful error handling  
-- 🔒 Rate-limiting (100 requests / 15 min per IP)  
-- 🧱 Clean and scalable controller-route-app structure  
+
+- ✅ `/me` GET endpoint returning JSON data
+- 🕒 Dynamic timestamp in ISO 8601 format
+- 🐱 Random cat fact fetched from an external API
+- ⚡ Graceful error handling
+- 🔒 Rate-limiting (100 requests / 15 min per IP)
+- 🧱 Clean and scalable controller-route-app structure
 
 ---
 
@@ -19,12 +20,13 @@ A simple RESTful API built with **Node.js + Express** that returns my profile in
 ### **GET** `/me`
 
 **Response:**
+
 ```json
 {
   "status": "success",
   "user": {
-    "email": "paulyusuf2000@gmail.com",
-    "name": "Paul Yusuf",
+    "email": "YourEmailHere@gmail.com",
+    "name": "Your Name",
     "stack": "Node.js/Express"
   },
   "timestamp": "2025-10-16T12:34:56.789Z",
@@ -33,23 +35,31 @@ A simple RESTful API built with **Node.js + Express** that returns my profile in
 ```
 
 ## ⚙️ Installation & Usage
+
 1️⃣ Clone the repository
+
 ```bash
 git clone https://github.com/PaulsCreate/HNG13_Stage-0.git
 cd HNG13_Stage-0
 ```
+
 2️⃣ Install dependencies
+
 ```bash
 npm install
 ```
+
 3️⃣ Run the server locally
+
 ```bash
 npm start
 ```
-The server will run: 
-`http://localhost:3000/me`
 
-## 🧰 Dependencies 
+The server will run:
+`http://localhost:3000/me`
+Deployed site: `https://profiinfo.up.railway.app/me`
+
+## 🧰 Dependencies
 
 | Package                | Description                                               |
 | ---------------------- | --------------------------------------------------------- |
@@ -58,22 +68,21 @@ The server will run:
 | **express-rate-limit** | Middleware to prevent abuse by limiting repeated requests |
 
 🌍 Environment Variables
-Variable	Description	Example
-PORT	Port number to run the server	3000
+Variable Description Example
+PORT Port number to run the server 3000
 🧪 Testing
 
 Test using Postman or curl:
 
 curl http://localhost:3000/me
 
-
 Should return:
 
 {
-  "status": "success",
-  "user": { "email": "paulyusuf2000@gmail.com", "name": "Paul Yusuf", "stack": "Node.js/Express" },
-  "timestamp": "2025-10-16T12:34:56.789Z",
-  "fact": "Cats sleep 70% of their lives."
+"status": "success",
+"user": { "email": "paulyusuf2000@gmail.com", "name": "Paul Yusuf", "stack": "Node.js/Express" },
+"timestamp": "2025-10-16T12:34:56.789Z",
+"fact": "Cats sleep 70% of their lives."
 }
 
 🛠️ Deployment
@@ -106,4 +115,4 @@ Writing clean and professional documentation
 
 Paul Yusuf
 Backend Developer | Cybersecurity Enthusiast
-📧 paulyusuf2000@gmail.com
+🔗 [GitHub](https://github.com/PaulsCreate/) | 🔗 [LinkedIn](https://www.linkedin.com/in/paul-yusuf-8b5a97209/)
