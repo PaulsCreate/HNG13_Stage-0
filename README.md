@@ -29,3 +29,65 @@ A simple RESTful API built with **Node.js + Express** that returns my profile in
   "timestamp": "2025-10-16T12:34:56.789Z",
   "fact": "Cats sleep 70% of their lives."
 }
+
+⚙️ Installation & Usage
+
+Clone repo
+
+git clone https://github.com/PaulsCreate/HNG13_Stage-0.git
+cd HNG13_Stage-0
+
+
+Install dependencies
+
+npm install
+
+Run server locally:
+
+npm start
+Server runs on http://localhost:3000/me
+
+🧰 Dependencies
+
+express
+axios
+express-rate-limit
+
+🌍 Environment Variables
+Variable	Description	Example
+PORT	Port to run server	3000
+🧪 Testing
+
+Use Postman or curl:
+
+curl http://localhost:3000/me
+
+
+Should return a valid JSON with a live cat fact.
+
+🛠️ Deployment
+
+Deployable on:
+Railway
+Render
+Heroku
+AWS Elastic Beanstalk
+
+PXXL App
+
+🧩 Lessons Learned
+
+API integration & external requests
+
+Proper JSON formatting
+
+Using async/await & error handling
+
+Implementing rate limiting for endpoint security
+
+Writing clear project documentation
+
+🧑‍💻 Author
+Paul Yusuf
+Backend Developer | Cybersecurity Enthusiast
+📧 paulyusuf2000@gmail.c
