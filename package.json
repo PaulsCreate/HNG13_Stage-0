@@ -113,10 +113,13 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start:dev": "nodemon server.js",
-    "start:prod": "nodemon server.js"
+    "start": " cross-env NODE_ENV=development nodemon server.js",
+    "dev": " cross-env NODE_ENV=development  nodemon server.js"
   },
   "author": "Paul Yusuf",
   "license": "MIT",
-  "description": ""
+  "description": "",
+  "devDependencies": {
+    "cross-env": "^10.1.0"
+  }
 }
