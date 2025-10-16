@@ -57,7 +57,7 @@ npm start
 
 The server will run:
 `http://localhost:3000/me`
-Deployed site: `https://profiinfo.up.railway.app/me`
+[DEPLOYED SITE](https://profileinfo.up.railway.app/me)
 
 ## 🧰 Dependencies
 
